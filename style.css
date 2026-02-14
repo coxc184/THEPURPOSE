@@ -1,0 +1,52 @@
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.scrollbox {
+  overflow: auto;
+  width: 400px;
+  max-height: 200px;
+  
+  --g:radial-gradient(55% 20px, #0009, #0000);  
+  background: 
+    linear-gradient(#fff 10px, #0000 40px calc(100% - 40px),#fff calc(100% - 10px)) local, 
+    var(--g) top   /100% 200%,    
+    var(--g) bottom/100% 200%;
+}
+
+body  {
+  margin:0;
+  height:100vh;
+  display:grid;
+  place-content:center;
+  font-size:25px;
+  font-family: "Oswald";
+}
+
+.hover-text {
+  color: rgb(0, 0, 0);
+  font-family: "Oswald";
+  transition: color 0.3s ease;
+}
+
+
+.hover-text:hover {
+  color: #262e96;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #132f82; 
+}
+
+
+
+
